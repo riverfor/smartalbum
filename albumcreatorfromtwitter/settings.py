@@ -168,7 +168,10 @@ TWITTER_CONF = {
     'APP_TITLE': 'Smart Album'
 }
 
-LIMIT_TWEET_NUMBER_REFRESH = 50
+#
+# How many tweets does the program Fetch 
+#
+LIMIT_TWEET_NUMBER_REFRESH = 100
 
 # Used to search photo
 SEARCH_PIC_PATTERN = 'protestosp'
