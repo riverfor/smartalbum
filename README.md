@@ -29,6 +29,20 @@ Album Creator from Twitter
 
 
 3 install
-    edit albumcreator.sh, change to the right path
-    add to your crontab
-    */20 * * * * sh <youpath>/albumcreator.sh
+
+    3.1 install project
+
+        python manage.py syncdb
+
+    3.2 add some user data by using the django backend manager
+
+        Twitter username:       twitter username
+        Display name:           Any name
+        Skip flag:              just keep blank
+    
+    3.3 install cron task 
+        You should execute  sh albumcreator.sh manully first time to initial the twitter api parameters
+
+        edit albumcreator.sh, change to the right path
+
+        add to your crontab  */20 * * * * sh <youpath>/albumcreator.sh
