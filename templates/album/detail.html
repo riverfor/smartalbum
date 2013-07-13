@@ -1,0 +1,9 @@
+<h1>{{ user_name }}'s Twitter Album Detail</h1>
+<h2>Photos</h2>
+<ul>
+{% for photo in photos %}
+<li><a href='{{ photo.expend_url }}' target='_blank'> View </a></li>
+{% empty %}
+<li>No photo for {{ user_name }} yet</li>
+{% endfor %}
+</ul>
