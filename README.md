@@ -25,3 +25,10 @@ Album Creator from Twitter
 
     South
         pip install South
+
+
+
+3 install
+    edit albumcreator.sh, change to the right path
+    add to your crontab
+    */20 * * * * sh <youpath>/albumcreator.sh
